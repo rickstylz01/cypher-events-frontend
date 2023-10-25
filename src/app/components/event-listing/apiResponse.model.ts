@@ -1,4 +1,4 @@
 export interface ApiResponse {
-  data: Event[];
+  data: any[];
   message: string;
 }
