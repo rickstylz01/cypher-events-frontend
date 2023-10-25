@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  private apiUrl = 'http://localhost:9095'
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getUsername(): string {
-    return 'Link';
+  registerUser(userData: any) {
+    return this.http.post(`${this.apiUrl}/auth/users/register/`, userData)
   }
 }
