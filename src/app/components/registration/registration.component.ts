@@ -17,14 +17,14 @@ export class RegistrationComponent {
 
   register() {
     const userData = {
-      username: this.username,
-      email: this.email,
+      userName: this.username,
+      emailAddress: this.email,
       password: this.password
     };
 
     this.userService.registerUser(userData).subscribe(
       response => {
-        console.log('Registreation successfull', response);
+        console.log('Registration successfull', response);
       },
       error => {
         console.error('Registration failed', error);
