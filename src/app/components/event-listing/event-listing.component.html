@@ -1,10 +1,10 @@
 <div id="event-list" class="container">
-  <div class="card">
-    <h5 class="card-header">Event Title</h5>
+  <div *ngFor="let event of events" class="card">
+    <h5 class="card-header">{{ event.name }}</h5>
     <img src="..." class="card-border" alt="event image">
     <div class="card-body">
-      <h5 class="card-title">Event Date | Time</h5>
-      <p class="card-text">Event Description...</p>
+      <h5 class="card-title">{{ event.eventDate | date:'medium' }}</h5>
+      <p class="card-text">{{ event.description }}</p>
       <p class="card-text">Price $</p>
       <a href="#" class="btn btn-primary">Details</a>
     </div>
