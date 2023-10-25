@@ -1,6 +1,8 @@
-#registration-form-container {
+#registration-form-container,
+#login-form-container {
   display: flex;
   border: 1px solid peru;
   margin: auto;
   justify-content: center;
+  padding: 8px;
 }
