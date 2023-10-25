@@ -1,0 +1,6 @@
+#registration-form-container {
+  display: flex;
+  border: 1px solid peru;
+  margin: auto;
+  justify-content: center;
+}
