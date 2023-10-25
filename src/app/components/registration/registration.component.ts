@@ -28,7 +28,7 @@ export class RegistrationComponent {
         console.log('Registration successfull', response);
 
         // Navigate to the home page after successful registration
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('home');
       },
       error => {
         console.error('Registration failed', error);

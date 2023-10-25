@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  // may need to change to emailaddress
   email: string = '';
   password: string = '';
 
@@ -17,7 +16,6 @@ export class LoginComponent {
 
   login() {
     const userData = {
-      // may need to change to emailaddress
       emailAddress: this.email,
       password: this.password
     }
@@ -26,8 +24,8 @@ export class LoginComponent {
       response => {
         console.log('Login successfull', response);
 
-        // Navigate to the home page after successful registration
-        this.router.navigateByUrl('/home');
+        // Navigate to the home page after successful login
+        this.router.navigateByUrl('home');
       },
       error => {
         console.error('Login failed', error);
