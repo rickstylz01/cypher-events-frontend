@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { response } from 'express';
 import { UserService } from 'src/app/services/user/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   login() {
     const userData = {
@@ -24,6 +25,9 @@ export class LoginComponent {
     this.userService.loginUser(userData).subscribe(
       response => {
         console.log('Login successfull', response);
+
+        // Navigate to the home page after successful registration
+        this.router.navigateByUrl('/home');
       },
       error => {
         console.error('Login failed', error);
