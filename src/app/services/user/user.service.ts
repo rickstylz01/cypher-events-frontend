@@ -12,4 +12,8 @@ export class UserService {
   registerUser(userData: any) {
     return this.http.post(`${this.apiUrl}/auth/users/register/`, userData)
   }
+
+  loginUser(userData: any) {
+    return this.http.post(`${this.apiUrl}/auth/users/login/`, userData);
+  }
 }
