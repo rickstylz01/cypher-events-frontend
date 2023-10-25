@@ -3,4 +3,10 @@
   border: 1px solid peru;
   margin: auto;
   justify-content: center;
+  padding: 8px;
+}
+
+#homepage-container {
+  border: 1px solid orangered;
+  padding: 8px;
 }
