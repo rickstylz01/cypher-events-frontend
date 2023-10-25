@@ -9,7 +9,7 @@ import { UserService } from 'src/app/services/user/user.service';
 })
 export class LoginComponent {
   // may need to change to emailaddress
-  username: string = '';
+  email: string = '';
   password: string = '';
 
   constructor(private userService: UserService) { }
@@ -17,7 +17,7 @@ export class LoginComponent {
   login() {
     const userData = {
       // may need to change to emailaddress
-      userName: this.username,
+      emailAddress: this.email,
       password: this.password
     }
 
