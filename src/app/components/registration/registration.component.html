@@ -7,6 +7,7 @@
     id="username" 
     aria-describedby="username"
     [(ngModel)]="username"
+    name="username"
     >
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input 
@@ -14,6 +15,8 @@
     class="form-control" 
     id="email" 
     aria-describedby="emailHelp"
+    [(ngModel)]="email"
+    name="email"
     >
   </div>
   <div class="mb-3">
@@ -22,6 +25,8 @@
     type="password" 
     class="form-control" 
     id="exampleInputPassword1"
+    [(ngModel)]="password"
+    name="password"
     >
   </div>
   <div class="mb-3 form-check">
