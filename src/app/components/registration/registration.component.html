@@ -1,30 +1,30 @@
 <form (ngSubmit)="register()">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Username</label>
+    <label for="username-registration" class="form-label">Username</label>
     <input 
     type="text" 
     class="form-control" 
-    id="username" 
+    id="username-registration" 
     aria-describedby="username"
     [(ngModel)]="username"
     name="username"
     >
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="email-registration" class="form-label">Email address</label>
     <input 
     type="email" 
     class="form-control" 
-    id="email" 
+    id="email-registration" 
     aria-describedby="emailHelp"
     [(ngModel)]="email"
     name="email"
     >
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <label for="password-registration" class="form-label">Password</label>
     <input 
     type="password" 
     class="form-control" 
-    id="exampleInputPassword1"
+    id="password-registration"
     [(ngModel)]="password"
     name="password"
     >

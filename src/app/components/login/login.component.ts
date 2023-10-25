@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { response } from 'express';
 import { UserService } from 'src/app/services/user/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,15 +9,13 @@ import { UserService } from 'src/app/services/user/user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  // may need to change to emailaddress
   email: string = '';
   password: string = '';
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   login() {
     const userData = {
-      // may need to change to emailaddress
       emailAddress: this.email,
       password: this.password
     }
@@ -24,6 +23,9 @@ export class LoginComponent {
     this.userService.loginUser(userData).subscribe(
       response => {
         console.log('Login successfull', response);
+
+        // Navigate to the home page after successful login
+        this.router.navigateByUrl('home');
       },
       error => {
         console.error('Login failed', error);
