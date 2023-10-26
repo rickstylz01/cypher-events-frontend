@@ -16,7 +16,7 @@ export class EventDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.eventId = +params['id']; 
+      this.eventId = +params['id']; // turns string into a number
 
       this.eventsService.getEventById(this.eventId).subscribe((response: EventDTO) => {
         this.eventDetails = response;
