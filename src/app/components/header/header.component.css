@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 8px;
+  border-bottom: 1px solid;
 }
 
 .button-wrapper {
