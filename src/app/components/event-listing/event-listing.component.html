@@ -5,7 +5,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ event.eventDate | date:'medium' }}</h5>
       <p class="card-text">{{ event.description }}</p>
-      <p class="card-text">Price $FREE</p>
+      <p class="card-text">Price $</p>
       <a id="event-details-link" [routerLink]="['/event', event.id, 'details']" class="btn btn-primary">Details</a>
     </div>
   </div>

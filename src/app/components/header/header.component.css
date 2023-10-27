@@ -9,3 +9,7 @@
 .button-wrapper {
   align-self: center;
 }
+
+a {
+  text-decoration: none;
+}
