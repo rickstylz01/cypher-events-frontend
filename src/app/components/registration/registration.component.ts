@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { error } from 'console';
-import { response } from 'express';
 import { UserService } from 'src/app/services/user/user.service';
 import { Router } from '@angular/router';
 
@@ -28,7 +26,7 @@ export class RegistrationComponent {
         console.log('Registration successfull', response);
 
         // Navigate to the home page after successful registration
-        this.router.navigateByUrl('home');
+        this.router.navigateByUrl('');
       },
       error => {
         console.error('Registration failed', error);

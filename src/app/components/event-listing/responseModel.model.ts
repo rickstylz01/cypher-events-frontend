@@ -18,6 +18,6 @@ export interface RSVPResponse {
 }
 
 export interface ApiResponse {
-  data: EventDTO[];
+  data?: EventDTO[];
   message: string;
 }

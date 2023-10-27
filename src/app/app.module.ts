@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { EventListingComponent } from './components/event-listing/event-listing.component';
+import { EventDetailsComponent } from './components/event-details/event-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventListingComponent } from './components/event-listing/event-listing.
     RegistrationComponent,
     HomepageComponent,
     LoginComponent,
-    EventListingComponent
+    EventListingComponent,
+    EventDetailsComponent
   ],
   imports: [
     BrowserModule,
