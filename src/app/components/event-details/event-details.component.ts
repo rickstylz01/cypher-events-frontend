@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { EventsService } from 'src/app/services/events/events.service';
 import { EventDTO } from '../event-listing/responseModel.model';
 import { ActivatedRoute } from '@angular/router';
+import { UserService } from 'src/app/services/user/user.service';
+import { response } from 'express';
 
 @Component({
   selector: 'app-event-details',
@@ -12,7 +14,7 @@ export class EventDetailsComponent implements OnInit {
   eventId: number = 0; // Initialze with a default value
   eventDetails: any; // Initialize as undefined
 
-  constructor(private route: ActivatedRoute, private eventsService: EventsService) {}
+  constructor(private route: ActivatedRoute, private eventsService: EventsService, private userService: UserService) {}
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -27,5 +29,21 @@ export class EventDetailsComponent implements OnInit {
         console.error("Error fetching event dtails: ", error)
       })
     })
+  }
+
+  onRSVP(): void {
+    const userId = this.userService.getUserId();
+    const authToken = this.userService.getAuthToken();
+    
+    if(userId && authToken) {
+      this.eventsService.rsvpToEvent(this.eventId, userId, authToken).subscribe(
+        response => {
+          console.log("RSVP successful: ", response);
+        },
+        error => {
+          console.error("Error RSVPing to event: ", error);
+        }
+      )
+    }
   }
 }
