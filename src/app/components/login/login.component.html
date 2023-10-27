@@ -1,28 +1,38 @@
-<form (ngSubmit)="login()">
-  <div class="mb-3">
-    <label for="email-login" class="form-label">Email address</label>
-    <!-- may need to change anything that says 'email' to 'username' -->
-    <input 
-    type="email" 
-    class="form-control" 
-    id="email-login" 
-    aria-describedby="email"
-    [(ngModel)]="email"
-    name="email"
-    >
-  </div>
-  <div class="mb-3">
-    <label for="password-login" class="form-label">Password</label>
-    <input 
-    type="password" 
-    class="form-control" 
-    id="password-login"
-    [(ngModel)]="password"
-    name="password"
-    >
-  </div>
-  <button type="submit" class="btn btn-primary">
-    Login
-  </button>
-</form>
+<div id="login-component-wrapper">
+  <form (ngSubmit)="login()">
+    <div class="mb-3">
+      <label for="email-login" class="form-label">Email address</label>
+      <!-- may need to change anything that says 'email' to 'username' -->
+      <input 
+      type="email" 
+      class="form-control" 
+      id="email-login" 
+      aria-describedby="email"
+      [(ngModel)]="email"
+      name="email"
+      >
+    </div>
+    <div class="mb-3">
+      <label for="password-login" class="form-label">Password</label>
+      <input 
+      type="password" 
+      class="form-control" 
+      id="password-login"
+      [(ngModel)]="password"
+      name="password"
+      >
+    </div>
+    <div id="login-btn-wrapper">
+      <button type="submit" class="btn btn-primary">
+        Login
+      </button>
+      Not a registered user?
+      <a id="register-link" [routerLink]="['/register']">
+        <button type="submit" class="btn btn-primary">
+          Register
+        </button>
+      </a>
+    </div>
+  </form>
+</div>
 
