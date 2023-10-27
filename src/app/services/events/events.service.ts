@@ -18,4 +18,8 @@ export class EventsService {
   getEventById(eventId: number): Observable<any> {
     return this.http.get<EventDTO>(`${this.apiUrl}/api/events/${eventId}/`);
   }
+
+  rsvpToEvent(eventId: number, userId: number): Observable<any> {
+    return this.http.post<EventDTO>(`${this.apiUrl}/api/events/${eventId}/rsvp/${userId}/`, userId)
+  }
 }
