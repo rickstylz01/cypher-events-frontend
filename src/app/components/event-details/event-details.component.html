@@ -24,7 +24,14 @@
 
   <!-- Details -->
   <div id="event-information" >
-    <h2>{{ eventDetails?.name }}</h2>
+    <div id="details-header">
+      <h2>{{ eventDetails?.name }} | {{ eventDetails?.venue }}</h2>
+      <button type="button" class="btn btn-warning">RSVP</button>
+    </div>
+    
+    <p><b>{{ eventDetails?.eventDate }}</b></p>
+    <p><b>currently attending: {{ eventDetails?.participants.length }}</b></p>
+    <p>{{ eventDetails?.description }}</p>
   </div>
   <div *ngIf="!eventDetails">Loading event details...</div>
 </div>
