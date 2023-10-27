@@ -5,3 +5,7 @@
 .card {
   margin-top: 10px;
 }
+
+#event-listing-img {
+  height: 410px;
+}
