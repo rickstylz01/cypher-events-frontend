@@ -1,0 +1,19 @@
+#event-list {
+  width: 1020px;
+}
+
+.card-border {
+  border: solid;
+}
+
+.card {
+  margin-top: 10px;
+}
+
+#event-listing-img {
+  height: 410px;
+}
+
+.card-body {
+  background-color: ghostwhite;
+}

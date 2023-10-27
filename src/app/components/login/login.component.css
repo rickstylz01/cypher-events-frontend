@@ -1,0 +1,18 @@
+#login-component-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px;
+  width: 385px;
+}
+
+#login-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

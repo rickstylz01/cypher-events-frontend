@@ -1,0 +1,12 @@
+<div id="event-list" class="container">
+  <div *ngFor="let event of events" class="card">
+    <h5 class="card-header">{{ event.name }}</h5>
+    <img src="../../../assets/concert.jpg" id="event-listing-img" class="card-border" alt="event image">
+    <div class="card-body">
+      <h5 class="card-title">{{ event.eventDate | date:'medium' }}</h5>
+      <p class="card-text">{{ event.description }}</p>
+      <p class="card-text">Price $</p>
+      <a id="event-details-link" [routerLink]="['/event', event.id, 'details']" class="btn btn-primary">Details</a>
+    </div>
+  </div>
+</div>
