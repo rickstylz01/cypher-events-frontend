@@ -1,7 +1,7 @@
 # Event Management Frontend
 
 ## Project Description
-The Event Management Frontend is a user-friendly Angular application designed to interact with the Event Management Backend. It provides a seamless interface for users to register, log in, view events, and RSVP to specific events. The frontend application is responsive, ensuring a smooth user experience across various devices.
+The **Cypher Events** - Event Management Frontend is a user-friendly Angular application designed to interact with the Event Management Backend. It provides a seamless interface for users to register, log in, view events, and RSVP to specific events. The frontend application is responsive, ensuring a smooth user experience across various devices.
 
 ## Table of Contents
 - [Features](#features)
