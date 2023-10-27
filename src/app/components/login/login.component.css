@@ -1,7 +1,7 @@
 #login-component-wrapper {
   display: flex;
   justify-content: center;
-  padding: 55px;
+  padding-top: 55px;
 }
 
 form {
