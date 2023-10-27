@@ -1,27 +1,69 @@
-# CeFrontend
+# Event Management Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+## Project Description
+The Event Management Frontend is a user-friendly Angular application designed to interact with the Event Management Backend. It provides a seamless interface for users to register, log in, view events, and RSVP to specific events. The frontend application is responsive, ensuring a smooth user experience across various devices.
 
-## Development server
+## Table of Contents
+- [Features](#features)
+- [Project Components](#project-components)
+- [Usage](#usage)
+- [Installation Instructions](#installation-instructions)
+- [Resources & Acknowledgements](#resources--acknowledgements)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- **User Authentication and Registration:**
+  - Users can register with a username, email, and password.
+  - Existing users can log in securely.
 
-## Code scaffolding
+- **Event Listings:**
+  - Displays a list of upcoming events retrieved from the backend.
+  - Each event shows its name, date, venue, and a brief description.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Event Details:**
+  - Users can click on events to view detailed information.
+  - Event details include name, date, venue, description, and participant count.
 
-## Build
+- **RSVP Functionality:**
+  - Logged-in users can RSVP to specific events.
+  - RSVP button updates event participation and provides user feedback.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project Components
+The frontend consists of the following components:
+- **Registration Component:** Allows users to register by providing necessary information.
+- **Login Component:** Enables users to log in securely.
+- **Event Listing Component:** Displays a list of events retrieved from the backend.
+- **Event Details Component:** Provides detailed information about a specific event and allows users to RSVP.
 
-## Running unit tests
+## Usage
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Navigate to the Project Directory:**
+    ```
+    cd event-management-frontend
+    ```
+3. **Install Dependencies:**
+    ```
+    npm install
+    ```
+4. **Run the Development Server:**
+    ```
+    ng serve
+    ```
+The application will be accessible at `http://localhost:42000` by default.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation Instructions
+Ensure you have Node.js and npm installed. If not, download and install them from [the official Node.jswebsite.](https://nodejs.org/)
 
-## Running end-to-end tests
+## Resources & Acknowledgements
+### General Assembly Instructors
+- Suresh Sigera: [GitHub](https://github.com/sureshSigera)
+- Dhrubo Chowdhury: [GitHub](https://github.com/DhruboChowdhury)
+- Leonardo Rodriguez: [GitHub](https://github.com/LeonardoRMR)
+### Links:
+- [Angular Documentation](https://angular.io/)
+- [Bootstrap Documentation](https://getbootstrap.com/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributors
+- **Rick Maya**: [GitHub](https://github.com/RickMMaya) | [LinkedIn](https://www.linkedin.com/in/rickmaya/)
