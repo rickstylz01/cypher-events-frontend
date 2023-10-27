@@ -22,7 +22,6 @@ export class LoginComponent {
 
     this.userService.loginUser(userData).subscribe(
       response => {
-        console.log('Login successfull', response);
 
         // Navigate to the home page after successful login
         this.router.navigateByUrl('');
