@@ -20,8 +20,6 @@ export class UserService {
     return this.http.post(`${this.apiUrl}/auth/users/login/`, userData)
     .pipe(
       tap((response: any) => {
-      
-
         this.saveAuthToken(response.jwt);
         this.saveUserId(response.user.id);
       })
